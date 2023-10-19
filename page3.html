@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <style>
+        input{
+            border: solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>แบบฟอร์มลงทะเบียน</h2>
+    <form style="border: solid 2px;">
+        <div>
+            <label for="Firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ" required>
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ" required>
+        </div>
+        <div>
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" placeholder="ป้อนอีเมลของคุณ" required>
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" placeholder="ป้อนรหัสของคุณ" required>
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="20" rows="5" required></textarea>
+        </div>
+        <div>
+             <label for="">อายุ</label>
+             <input type="number" name="age" min="1" max="150" value="2">
+        </div>
+        <div>
+            <label for="birthday">วันเกิด</label>
+            <input type="date" name="birthday" required>
+        </div>
+        <div>
+            <label for="tel">เบอร์โทร</label>
+            <input type="tel" name="tel" required>
+        </div>
+        <div required>
+            <label for="sex">เพศ</label>
+            <input type="radio" name="male">
+            <label for="male">ชาย</label>
+            <input type="radio" name="male">
+            <label for="female">หญิง</label>
+            <input type="radio" name="male">
+            <label for="nothing">อื่นๆ</label>
+        </div>
+        <div required>
+            <label for="color">สีที่ชอบ</label>
+            <input type="color" name="color">
+        </div>
+        <div required>
+            <label for="hob">งานอดิเรก</label>
+            <input type="checkbox" name="hob">ทำเว็บ
+            <input type="checkbox" name="hob">เล่นกีต้าร์
+            <input type="checkbox" name="hob">เล่นเกม
+            <input type="checkbox" name="hob">ดูหนัง
+        </div>
+        <div required>
+            <label for="edu">การศึกษา</label>
+            <select name="edu" id="edu">
+                <option value="มัธยมตอนต้น">มัธยมตอนต้น</option>
+                <option value="มัธยมตอนปลาย">มัธยมตอนปลาย</option>
+                <option value="ประกาศนียบัตรวิชาชีพ">ประกาศนียบัตรวิชาชีพ</option>
+                <option value="ประกาศนียบัตรวิชาชีพขั้นสูง">ประกาศนียบัตรวิชาชีพขั้นสูง</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+            </select>
+        </div>
+        <div required>
+            <label for="file">อัปโหลดเอกสารยืนยันตัวตน</label>
+            <input type="file" name="file">
+        </div>
+        <div>
+            <label for="web">แนบเว็บส่วนตัว</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" onclick="alert('ลงทะเบียนเสร็จสิ้น!')" value="ยืนยันข้อมูล">
+            <input type="reset" onclick="alert('ล้างข้อมูลเสร็จสิ้น!')" value="ล้างข้อมูล">
+        </div>
+    </form>
+    <a href="page2.html">Click for page2</a>
+    <a href="index.html">Home</a>
+</body>
+</html>
